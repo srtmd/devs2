@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <meta property="og:image" content="https://cdn.discordapp.com/attachments/964288791869284383/1037489383969923153/20221031_185334.jpg" />
+     <meta property="og:description" content="nxty solutions." />
+     <meta name="description" content="nxty solutions.">
+     <meta name="keywords" content="nxty, solutions, s2">
+     <title>nxty solutions.</title>
+     <link rel="stylesheet" href="css/master.css">
+     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="css/edgy.css">
+     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+     <script src="js/jquery.vide.js"></script>
+</head>
+<!-- Autoplay background video -->
+<body data-vide-bg="vid">
+      <!-- 'nxty' text in middle of screen -->
+     <h1>nxty</h1>
+
+          <br>
+          <center><div id="clockDisplay" class="clockStyle"></div></center>
+          <!-- Clock script -->
+          <script>
+          function renderTime() {
+          var currentTime = new Date();
+          var diem = "am";
+          var h = currentTime.getHours();
+          var m = currentTime.getMinutes();
+          var s = currentTime.getSeconds();
+          setTimeout('renderTime()',1000);
+          if (h == 0) {
+               h = 12;
+          } else if (h > 12) { 
+               h = h - 12;
+               diem="pm";
+          }
+          if (h < 10) {
+               h = "0" + h;
+          }
+          if (m < 10) {
+               m = "0" + m;
+          }
+          if (s < 10) {
+               s = "0" + s;
+          }
+          var myClock = document.getElementById('clockDisplay');
+          myClock.textContent = h + ":" + m + ":" + s + " " + diem;
+          myClock.innerText = h + ":" + m + ":" + s + " " + diem;
+          }
+          renderTime();
+          </script><br>	
+          
+          
+          <pre><h2 href="#">About me: <br>Eae, sou nxty.<br>Tenho mais de 10 anos de Internet.<br><br>Atualmente estudando desenvolvimento web e de software.<br>No meu tempo livre gosto de jogar<br>e passar o tempo com meus amigos.<br>Sou um grande fã de CS:GO, principalmente das Skins.<br><br>Quer entrar em contato? Veja os links abaixo.<br> </pre>
+
+<!-- Links to pages -->
+<pre><p >[ <a href="https://twitter.com/2nxty" >twitter</a> &zwnj;. <a href="https://www.youtube.com/playlist?list=PLiB25oLF1r5oxMZr90V3fCLZw2nZHxq1h" >playlist</a> &zwnj;. <a href="https://steamcommunity.com/id/2nxty">steam</a> &zwnj;. <a href="https://nxty.cc" >sociais</a> ]</pre>
+    
+<!-- Autoplay music 
+<embed id="bgAudio" type="audio/mpeg" src="music/vid.mp3" autoplay="true" volume="20" height="0" width="200" autostart="true"> </embed> -->
+
+<audio autoplay id="myaudio" loop autostart="true" autoplay="true">
+  <source src="music/vid.mp3" type="audio/mpeg">
+</audio>
+<script>
+  var audio = document.getElementById("myaudio");
+  audio.volume = 0.2;
+</script>
+
+
+</body>
+</html>
