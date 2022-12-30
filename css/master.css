@@ -42,3 +42,8 @@ h2 {
           font-size: 14px;
      }
 }
+@media only screen and (max-width: 720px) {
+     h2 {
+          font-size: 12px;
+     }
+}
