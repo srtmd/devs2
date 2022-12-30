@@ -13,12 +13,16 @@ body {
     user-select: none;
     font-family: monospace;
     font-weight: bold;
+    font-size: 100%;
     color: #ffffff;
     text-shadow: 1px 1px 0px rgba(173, 145, 0,100), -1px -1px 0px rgba(123, 8, 255,100);
 	cursor:  url(../arrow.html) 4 12, auto;
 	z-index: 1337;
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
-
 
 video {
     position: fixed;
@@ -63,7 +67,7 @@ a {
 a {
     color: inherit;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 a:hover {
